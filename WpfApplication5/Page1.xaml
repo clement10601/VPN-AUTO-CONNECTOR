@@ -1,0 +1,49 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LoginIndicator" xmlns:MuiTest="clr-namespace:MuiTest" x:Name="page" x:Class="LoginIndicator.Page1" 
+      mc:Ignorable="d"
+	Title="Page1" Height="{Binding ActualHeight, ElementName=grid2, Mode=OneWay}" Width="{Binding ActualWidth, ElementName=grid2, Mode=OneWay}">
+
+    <Grid x:Name="grid2" VerticalAlignment="Top" HorizontalAlignment="Left" Height="235" Width="455">
+        <Grid HorizontalAlignment="Left" Height="280" Margin="194,10,0,0" VerticalAlignment="Top" Width="251">
+            <Label Content="帳號" Margin="10,10,10,240" FontSize="24" FontFamily="Arial Black" BorderThickness="{Binding ElementName=grid, Mode=OneWay}">
+                <Label.BindingGroup>
+                    <BindingGroup/>
+                </Label.BindingGroup>
+            </Label>
+            <TextBox x:Name="AccountA" Margin="10,40,10,210" TextWrapping="Wrap" TextChanged="AccountA_TextChanged">
+                <TextBox.BindingGroup>
+                    <BindingGroup/>
+                </TextBox.BindingGroup>
+            </TextBox>
+            <Label Content="密碼" Margin="10,80,10,170" FontFamily="Arial Black" FontSize="24">
+                <Label.BindingGroup>
+                    <BindingGroup/>
+                </Label.BindingGroup>
+            </Label>
+            <PasswordBox x:Name="PasswdB" Margin="10,110,10,140">
+                <PasswordBox.BindingGroup>
+                    <BindingGroup/>
+                </PasswordBox.BindingGroup>
+            </PasswordBox>
+            <Button x:Name="LoginBtn" Content="登 入" Margin="10,157,8,58" FontFamily="Arial Black" FontSize="24" Click="buttonLogin_Click" Height="{Binding ActualHeight/, ElementName=grid1, Mode=OneWay}" Background="#FF00A01E" Foreground="White">
+                <Button.BindingGroup>
+                    <BindingGroup/>
+                </Button.BindingGroup>
+            </Button>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="206" Margin="10,23,0,0" VerticalAlignment="Top" Width="179">
+            <Image HorizontalAlignment="Left" Height="206" VerticalAlignment="Top" Width="179" Source="FfAIm.jpg" Stretch="Fill">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="FfAIm.jpg"/>
+                </Image.OpacityMask>
+            </Image>
+        </Grid>
+    </Grid>
+</Page>

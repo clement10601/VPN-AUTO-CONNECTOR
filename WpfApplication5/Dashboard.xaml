@@ -1,0 +1,19 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:MuiTest="clr-namespace:MuiTest" x:Class="LoginIndicator.Dashboard"
+             mc:Ignorable="d" Width="523" Height="258">
+    <Grid Style="{StaticResource ContentRoot}" Margin="16,28,10,10">
+        <!-- TODO: set @SelectedSource -->
+        <mui:ModernTab Layout="List" Margin="0,0,10,10">
+            <mui:ModernTab.Links>
+                <!-- TODO: set @Source -->
+                <mui:Link DisplayName="SaKuRa01" Source="/serv/Serv_Saku1.xaml#1"/>
+                <mui:Link DisplayName="Linode01" Source="/serv/Serv_Lino1.xaml#1"/>
+            </mui:ModernTab.Links>
+        </mui:ModernTab>
+    </Grid>
+</UserControl>
